@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kahvaltılık Tarifler</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffdf6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ffb347;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 32px;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .geri {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .geri:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .tarif {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      padding: 30px;
+    }
+
+    .tarif h2 {
+      margin-top: 0;
+      color: #e07a5f;
+    }
+
+    .tarif ul {
+      padding-left: 20px;
+    }
+
+    .tarif ul li {
+      margin-bottom: 5px;
+    }
+
+    .tarif p {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="tarifler.html" class="geri">&#8592; Geri</a>
+    Kahvaltılık Tarifler
+  </header>
+
+  <div class="container">
+
+    <!-- Pankek Tarifinin ID'sini Ekledim -->
+    <div class="tarif" id="pankek">
+      <h2>Pankek</h2>
+      <p><strong>Malzemeler:</strong></p>
+      <ul>
+        <li>2 adet yumurta</li>
+        <li>2 yemek kaşığı şeker</li>
+        <li>1 su bardağı süt</li>
+        <li>1,5 su bardağı un</li>
+        <li>1 paket kabartma tozu</li>
+        <li>1 paket vanilin</li>
+      </ul>
+      <p><strong>Hazırlanışı:</strong> Yumurtayı ve şekeri çırpın. Ardından sütü ekleyip karıştırın. Un, kabartma tozu ve vanilini ekleyerek pürüzsüz bir hamur elde edin. Tavada arkalı önlü pişirin.</p>
+    </div>
+
+    <!-- Sigara Böreği Tarifinin ID'sini Ekledim -->
+    <div class="tarif" id="sigara-boregi">
+      <h2>Sigara Böreği</h2>
+      <p><strong>Malzemeler:</strong></p>
+      <ul>
+        <li>3 adet yufka</li>
+        <li>200 gr beyaz peynir</li>
+        <li>Maydanoz (isteğe bağlı)</li>
+        <li>Sıvı yağ (kızartmak için)</li>
+      </ul>
+      <p><strong>Hazırlanışı:</strong> Yufkayı üçgen şekilde kesin. İç harcını koyup sigara şeklinde sarın. Kızgın yağda altın rengi alana kadar kızartın.</p>
+    </div>
+
+    <!-- Kıymalı Börek Tarifinin ID'sini Ekledim -->
+    <div class="tarif" id="kiymali-borek">
+      <h2>Kıymalı Börek</h2>
+      <p><strong>Malzemeler:</strong></p>
+      <ul>
+        <li>4 adet yufka</li>
+        <li>300 gr kıyma</li>
+        <li>1 adet soğan</li>
+        <li>Tuz, karabiber</li>
+        <li>Sıvı yağ</li>
+      </ul>
+      <p><strong>Hazırlanışı:</strong> Soğanı kavurup kıymayı ekleyin. Baharatları ekledikten sonra yufkayı serip harcı yayın ve sarın. Fırında üzeri kızarana kadar pişirin.</p>
+    </div>
+
+    <!-- Menemen Tarifinin ID'sini Ekledim -->
+    <div class="tarif" id="menemen">
+      <h2>Menemen</h2>
+      <p><strong>Malzemeler:</strong></p>
+      <ul>
+        <li>3 adet domates</li>
+        <li>2 adet yeşil biber</li>
+        <li>3 adet yumurta</li>
+        <li>Sıvı yağ</li>
+        <li>Tuz</li>
+      </ul>
+      <p><strong>Hazırlanışı:</strong> Biberleri yağda kavurun. Domatesleri ekleyip yumuşayana kadar pişirin. Yumurtaları kırıp karıştırarak pişirin. Tuz ekleyip servis edin.</p>
+    </div>
+
+    <!-- Yumurta Kapama Tarifinin ID'sini Ekledim -->
+    <div class="tarif" id="yumurta-kapama">
+      <h2>Yumurta Kapama</h2>
+      <p><strong>Malzemeler:</strong></p>
+      <ul>
+        <li>4 adet haşlanmış yumurta</li>
+        <li>2 yemek kaşığı tereyağı</li>
+        <li>1 çay kaşığı pul biber</li>
+        <li>Tuz</li>
+      </ul>
+      <p><strong>Hazırlanışı:</strong> Yumurtaları ikiye bölün. Tereyağını eritin, pul biberi ekleyin. Yumurtaları sosa batırarak 1-2 dakika pişirin.</p>
+    </div>
+
+    <!-- Peynirli Ekmek Tarifinin ID'sini Ekledim -->
+    <div class="tarif" id="peynirli-ekmek">
+      <h2>Peynirli Ekmek</h2>
+      <p><strong>Malzemeler:</strong></p>
+      <ul>
+        <li>4 dilim ekmek</li>
+        <li>150 gr beyaz peynir</li>
+        <li>Maydanoz</li>
+        <li>1 yumurta</li>
+      </ul>
+      <p><strong>Hazırlanışı:</strong> Peyniri ezip yumurta ve doğranmış maydanozla karıştırın. Ekmeklerin üstüne sürün. Fırında üzeri kızarana kadar pişirin.</p>
+    </div>
+
+  </div>
+</body>
+</html>

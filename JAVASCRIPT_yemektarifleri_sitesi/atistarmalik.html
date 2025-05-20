@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atıştırmalık Tarifler</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffdf6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ffb347;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 32px;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .geri {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .geri:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .tarif {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      padding: 30px;
+    }
+
+    .tarif h2 {
+      margin-top: 0;
+      color: #e07a5f;
+    }
+
+    .tarif ul {
+      padding-left: 20px;
+    }
+
+    .tarif ul li {
+      margin-bottom: 5px;
+    }
+
+    .tarif p {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="tarifler.html" class="geri">&#8592; Geri</a>
+    Atıştırmalık Tarifler
+  </header>
+
+  <div class="container">
+
+    <div class="tarif" id="pide">
+      <h2>Yumurtalı Otlu Pide</h2>
+      <p><strong>Malzemeler:</strong></p>
+      <ul>
+        <li>2 su bardağı un</li>
+        <li>1 çay kaşığı tuz</li>
+        <li>1 çay bardağı ılık su</li>
+        <li>Yarım paket instant maya</li>
+        <li>2 yumurta</li>
+        <li>Taze otlar (maydanoz, dereotu)</li>
+      </ul>
+      <p><strong>Hazırlanışı:</strong> Hamuru yoğurup dinlendirin. İnce açıp üzerine yumurta ve ot karışımını yayın. Kenarlarını kapatıp fırında pişirin.</p>
+    </div>
+
+    <div class="tarif" id="sandvic">
+      <h2>Sandviç Ekmeği</h2>
+      <p><strong>Malzemeler:</strong></p>
+      <ul>
+        <li>3 su bardağı un</li>
+        <li>1 su bardağı ılık süt</li>
+        <li>1 çay bardağı sıvı yağ</li>
+        <li>1 tatlı kaşığı şeker</li>
+        <li>1 çay kaşığı tuz</li>
+        <li>1 paket instant maya</li>
+      </ul>
+      <p><strong>Hazırlanışı:</strong> Malzemeleri karıştırarak yumuşak hamur yoğurun. Mayalandırın, şekil verin. 180°C fırında altın rengini alana kadar pişirin.</p>
+    </div>
+
+    <div class="tarif" id="rulo">
+      <h2>Kıymalı Milföy Rulo</h2>
+      <p><strong>Malzemeler:</strong></p>
+      <ul>
+        <li>4 yaprak milföy</li>
+        <li>200 gr kıyma</li>
+        <li>1 adet soğan</li>
+        <li>Tuz, karabiber</li>
+        <li>Yumurta sarısı (üzeri için)</li>
+      </ul>
+      <p><strong>Hazırlanışı:</strong> Soğan ve kıymayı kavurun. Milföylere iç harcı koyup rulo yapın. Üzerine yumurta sürüp fırında kızarana kadar pişirin.</p>
+    </div>
+
+    <div class="tarif" id="pizza">
+      <h2>Kolay Pizza</h2>
+      <p><strong>Malzemeler:</strong></p>
+      <ul>
+        <li>Hazır lavaş</li>
+        <li>Domates sosu</li>
+        <li>Kaşar peyniri</li>
+        <li>Sucuk, zeytin, mısır (isteğe bağlı)</li>
+      </ul>
+      <p><strong>Hazırlanışı:</strong> Lavaşa domates sos sürüp üzerine malzemeleri dizin. Önceden ısıtılmış fırında kaşar eriyene kadar pişirin.</p>
+    </div>
+
+    <div class="tarif" id="avakado">
+      <h2>Avokado Ruloları</h2>
+      <p><strong>Malzemeler:</strong></p>
+      <ul>
+        <li>2 adet olgun avokado</li>
+        <li>1 limon</li>
+        <li>1 diş sarımsak</li>
+        <li>Tuz, karabiber</li>
+        <li>Tortilla ekmeği</li>
+      </ul>
+      <p><strong>Hazırlanışı:</strong> Avokadoyu ezip sarımsak ve limonla karıştırın. Tortillalara sürüp sarın. Dilimleyip servis edin.</p>
+    </div>
+
+    <div class="tarif" id="tako">
+      <h2>Kolay Lavaş Tako</h2>
+      <p><strong>Malzemeler:</strong></p>
+      <ul>
+        <li>Lavaş</li>
+        <li>Kıyma veya tavuk</li>
+        <li>Soğan, biber, domates</li>
+        <li>Baharatlar</li>
+      </ul>
+      <p><strong>Hazırlanışı:</strong> İç harcı pişirin. Lavaşın ortasına koyun. İsteğe göre yoğurt veya sosla servis edin.</p>
+    </div>
+
+  </div>
+</body>
+</html>

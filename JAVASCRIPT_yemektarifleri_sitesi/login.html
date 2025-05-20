@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Giriş Yap</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fffafa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      position: relative;
+    }
+
+    .login-container h2 {
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    .btn {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      box-sizing: border-box;
+    }
+
+    .btn {
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .login-btn {
+      background-color: #fb5849;
+      color: white;
+    }
+
+    .login-btn:hover {
+      background-color: #e14b3e;
+      transform: scale(1.05);
+    }
+
+    .register-btn {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .register-btn:hover {
+      background-color: #0069d9;
+      transform: scale(1.05);
+    }
+
+    .back-link {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      text-decoration: none;
+      color: #555;
+      font-weight: 600;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <a href="index.php" class="back-link">← Geri</a>
+    <h2>Giriş Yap</h2>
+    <form action="login.php" method="POST">
+      <input type="text" name="kullanici_adi" placeholder="Kullanıcı Adı" required />
+      <input type="password" name="sifre" placeholder="Şifre" required />
+      <button type="submit" class="btn login-btn">Giriş Yap</button>
+    </form>
+    
+    <a href="register-1.html"><button class="btn register-btn">Üye Ol</button></a>
+  </div>
+
+  <script>
+    function validateLoginForm() {
+      const user = document.getElementById('username').value.trim();
+      const pass = document.getElementById('password').value.trim();
+      if (!user || !pass) {
+        alert("Lütfen tüm alanları doldurun.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>
